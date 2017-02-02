@@ -1,4 +1,5 @@
 # Defines our Vagrant environment
+##
 #
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
