@@ -1,0 +1,4 @@
+users:
+  users_name:
+    - { name: jeremie, ssh_key_pub: "/home/jeremie/.ssh/id_rsa.pub", path: "/home/jeremie", bashrc_file: "/home/jeremie/.bashrc" }
+    - { name: julien, ssh_key_pub: "/home/julien/.ssh/id_rsa.pub", path: "/home/julien", bashrc_file: "/home/julien/.bashrc" }

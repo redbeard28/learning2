@@ -1,0 +1,10 @@
+---
+- name: install git
+  apt: name=git state=installed update_cache=yes
+
+- name: Set authorized key took from file
+  authorized_key:
+    user: jeremie_cuadrado
+    state: present
+    key: "{{ lookup('file', '/home/jeremie/.ssh/id_rsa.pub') }}"
+

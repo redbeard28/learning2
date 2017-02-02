@@ -1,0 +1,3 @@
+ hosts: mgmt
+  roles:
+    - {role: users, tags: users }
