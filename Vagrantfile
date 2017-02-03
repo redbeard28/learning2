@@ -33,7 +33,7 @@ Vagrant.configure("2") do |config|
       lb_config.vm.provider "virtualbox" do |vb|
         vb.memory = "256"
       end
-      lb_config.vm.provision :shell, path: "scrips/bootstrap.sh"
+      lb_config.vm.provision :shell, path: "bootstrap.sh"
       lb_config.vm.provision :shell, path: "scripts/dns.sh"
       lb_config.vm.provision :shell, path: "scripts/proxy_evry.sh"
 
@@ -51,7 +51,7 @@ Vagrant.configure("2") do |config|
         node.vm.provider "virtualbox" do |vb|
           vb.memory = "256"
         end
-        node.vm.provision :shell, path: "scripts/bootstrap.sh"
+        node.vm.provision :shell, path: "bootstrap.sh"
         node.vm.provision :shell, path: "scripts/dns.sh"
         node.vm.provision :shell, path: "scripts/proxy_evry.sh"
     end
