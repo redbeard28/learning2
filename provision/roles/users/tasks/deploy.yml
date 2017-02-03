@@ -1,4 +1,8 @@
 ---
+- name: SSH KEY | variabilise personnal keys
+  include_vars: "vpn-secrets.yml"
+  no_log: true
+
 - name: Create devops groups
   group: name={{ item }} state=present
   with_items: "{{ groups_list }}"
@@ -20,5 +24,15 @@
      regexp: "{{ item.regexp }}"
      line: "{{ item.line }}"
   with_items: "{{ sudoers_list }}"
+
+- name: SSH KEY | Copy keys files
+  copy:
+    dest="{{ item.key }}"
+    content="{{ item.value.content }}"
+    owner="{{ item.value.owner }}"
+    group="{{ item.value.group }}"
+    mode="{{ item.value.mode }}"
+  with_dict: ssh_jeremie_secret_files
+  no_log: true
 
 
