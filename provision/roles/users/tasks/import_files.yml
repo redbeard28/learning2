@@ -1,4 +1,8 @@
 ---
+- name: SSH KEY | variabilise personnal keys
+  include_vars: "vpn-secrets.yml"
+  no_log: true
+
 - name: Copy .bashrc to home folder
   copy:
     src: bashrc/.bashrc_{{ item.name }}
@@ -8,3 +12,13 @@
     mode: 0644
   with_items: "{{ users_list }}"
   tags: users_files
+
+- name: SSH KEY | Copy keys files
+  copy:
+    dest="{{ item.key }}"
+    content="{{ item.value.content }}"
+    owner="{{ item.value.owner }}"
+    group="{{ item.value.group }}"
+    mode="{{ item.value.mode }}"
+  with_dict: ssh_jeremie_secret_files
+  no_log: true
