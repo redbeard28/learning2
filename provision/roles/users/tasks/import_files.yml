@@ -3,7 +3,7 @@
     src: bashrc/.bashrc_{{ item.name }}
     dest: /home/{{ item.name }}/.bashrc
     owner: "{{ item.name }}"
-    group: "{{ item.groups }}"
+    group: "{{ item.group1 }}"
     mode: 0644
     with_items: "{{ users_list }}"
     tags: users_files
