@@ -1,11 +1,6 @@
-# Created by .ignore support plugin (hsz.mobi)
+### Vault
+.vault_pass.txt
 
-### ANSIBLE ###
-ansible/group_vars
-ansible/secrets
-
-### SSH KEYS ###
-.ssh/*
 
 ### VAGRANT DEF ###
 .vagrant/*
@@ -264,3 +259,43 @@ bash-template
 plateform/ingestion/gateway-sftp/build/
 
 
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+npm-debug.log
+node_modules
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# editor generated files #
+######################
+.idea
+
+# vagrant generated files #
+######################
+.vagrant
+vagrant_*
