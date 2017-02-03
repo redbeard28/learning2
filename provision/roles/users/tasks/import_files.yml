@@ -1,0 +1,8 @@
+---
+- copy:
+    src: bashrc/.bashrc_{{ users_list.name }}
+    dest: /home/{{ users_list.name }}
+    owner: {{ users_list.name }}
+    group: {{ users_list.groups }}
+    mode: 0644
+    tags: users_files

@@ -1,6 +1,6 @@
 users_list:
-  - { name: 'jeremie', group1: 'devops', group2: 'users', key: 'public_keys/jeremie' }
-  - { name: 'julien', group1: 'devops', group2: 'users', key: 'public_keys/julien' }
+  - { name: 'jeremie', group1: 'devops', group2: 'users', key: 'public_keys/jeremie', bash_file: 'bashrc/.bashrc_jeremie' }
+  - { name: 'julien', group1: 'devops', group2: 'users', key: 'public_keys/julien', bash_file: 'bashrc/.bashrc_julien' }
 
 groups_list:
   - devops

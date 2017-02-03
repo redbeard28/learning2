@@ -1,3 +1,6 @@
 ---
 - include: deploy.yml
   tags: users
+
+- include: import_files.yml
+  tags: [users,users_files]
