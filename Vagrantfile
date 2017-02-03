@@ -16,7 +16,7 @@ Vagrant.configure("2") do |config|
         vb.memory = "256"
       end
       mgmt_config.vm.provision :shell, path: "bootstrap-mgmt.sh"
-     mgmt_config.vm.provision :shell, path: "scripts/dns_carrefour.sh"
+     mgmt_config.vm.provision :shell, path: "scripts/dns.sh"
      mgmt_config.vm.provision :shell, path: "scripts/proxy_evry.sh"
       mgmt_config.vm.provision "ansible" do |ansible|
 	    ansible.playbook = "provision/playbook.yml"
@@ -34,8 +34,8 @@ Vagrant.configure("2") do |config|
         vb.memory = "256"
       end
       lb_config.vm.provision :shell, path: "scrips/bootstrap.sh"
-      lb.vm.provision :shell, path: "scripts/dns.sh"
-      lb.vm.provision :shell, path: "scripts/proxy_evry.sh"
+      lb_config.vm.provision :shell, path: "scripts/dns.sh"
+      lb_config.vm.provision :shell, path: "scripts/proxy_evry.sh"
 
   end
 
