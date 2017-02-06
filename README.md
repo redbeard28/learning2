@@ -1,6 +1,6 @@
 ## Entrainements à Ansible
 
-Exercies sur la mise en place d'un environnement de test sous Vagrant + VirtualBox.
+Exercices sur la mise en place d'un environnement de test sous Vagrant + VirtualBox.
 
 La partie importante est dans le répertoire provision.
 
