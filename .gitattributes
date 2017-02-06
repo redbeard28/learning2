@@ -2,9 +2,9 @@
 #Encryp files
 
 *.key filter=git-crypt diff=git-crypt
-id_rsa
-*.pub
-*.pem
-*.cert
-*.crt
-*.sh
+id_rsa filter=git-crypt diff=git-crypt
+*.pub filter=git-crypt diff=git-crypt
+*.pem filter=git-crypt diff=git-crypt
+*.cert filter=git-crypt diff=git-crypt
+*.crt filter=git-crypt diff=git-crypt
+*.sh filter=git-crypt diff=git-crypt
