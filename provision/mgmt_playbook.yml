@@ -1,8 +1,4 @@
 ---
-- name: SSH KEY | variabilise personnal keys
-  include_vars: "vars/main.yml"
-  no_log: false
-  
 - hosts: mgmt
   become: yes
   become_method: sudo

@@ -1,6 +1,6 @@
 ---
 - name: SSH KEY | variabilise personnal keys
-  include_vars: "secrets.yml"
+  include_vars: "vars/main.yml"
   no_log: false
 
 - name: Copy .bashrc to home folder
