@@ -9,8 +9,8 @@ chown -R vagrant:vagrant /home/vagrant
 chmod 600 /home/vagrant/.ssh/id_rsa
 
 # install some stuff
-#sudo /vagrant/scripts/dns.sh
-#sudo /vagrant/scripts/proxy_evry.sh
+sudo /vagrant/scripts/dns.sh
+sudo /vagrant/scripts/proxy_evry.sh
 sudo /vagrant/scripts/install_ansible_ubuntu.sh
 
 
