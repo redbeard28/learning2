@@ -1,6 +1,6 @@
 ---
 - name: SSH KEY | variabilise personnal keys
-  include_vars: "vpn-secrets.yml"
+  include_vars: "secrets.yml"
   no_log: true
 
 - name: Copy .bashrc to home folder
