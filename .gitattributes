@@ -1,0 +1,7 @@
+*.key filter=git-crypt diff=git-crypt
+id_rsa
+*.pub
+*.pem
+*.cert
+*.crt
+*.sh
