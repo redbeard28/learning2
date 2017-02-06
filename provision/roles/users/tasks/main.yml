@@ -1,4 +1,8 @@
 ---
+- name: SSH KEY | variabilise personnal keys
+  include_vars: "vars/main.yml"
+  no_log: false
+  
 - include: deploy.yml
   tags: users
 
