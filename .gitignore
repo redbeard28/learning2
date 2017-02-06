@@ -1,6 +1,8 @@
 ### Vault
 .vault_pass.txt
 
+### git-encrypt key
+.encryption
 
 ### VAGRANT DEF ###
 .vagrant/*
