@@ -19,7 +19,7 @@ Vagrant.configure("2") do |config|
      mgmt_config.vm.provision :shell, path: "scripts/dns.sh"
      mgmt_config.vm.provision :shell, path: "scripts/proxy_evry.sh"
       mgmt_config.vm.provision "ansible" do |ansible|
-	    ansible.playbook = "provision/playbook.yml"
+	    ansible.playbook = "provision/mgmt_playbook.yml"
       end 
   end
 
